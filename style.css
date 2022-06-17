@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font: 16px/28px;
+    font-family: montserrat, sans-serif;
+    color: #333;
+}
+.container{
+    width: 100%;
+    background-color: #e5edeb;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: #83BD75;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    position: relative
+}
+
+.header .judul {
+
+    margin-left: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000000;
+}
+.header ul{
+    font-weight: bold;
+    flex: 1;
+    margin-left: 80px;
+}
+.header ul li{
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 8px;
+    list-style: none;
+    
+}
+.header a{
+    text-decoration: none;
+    color:  #333;
+    padding: 4px;
+
+}
+.header a:hover{
+    color: grey;
+}
+
+.hero{
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 15px solid #c8c2bc;
+}
+
+.about {
+    padding: 50px;
+    border-bottom: 15px solid #c8c2bc;
+}
+.about h2{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.about h3{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.about h6{
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about img{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+}
+.about p {
+    padding: 5px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.foot{
+    background-color: #83BD75;
+    color: #333;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+}
+.foot .Box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+.Box h4{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+.Box .isi{
+    margin: 0px 0 0 0;
+}
+.kiri h4{
+    text-shadow: 1px 1px 1px #000000;
+    font-size: 19px;
+}
+.kiri h6{
+    margin-top: 10px;
+}
+.center .isi{
+    margin-top: 5px;
+}
+.center .isi span{
+    margin-top: 5px;
+}
+@media  screen and (max-width:1100px) {
+    .header{
+        display: block;
+    }
+    .header .judul{
+        margin-left: 15px;
+        margin-top: 0px;
+        font-size: 40px;
+    }
+    .header ul{
+        justify-content: center;
+        font-size: 15px;
+        margin-top: 0px;
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width:950px) {
+    .kegiatan .grid-kegiatan{
+        grid-template-columns: auto auto;
+    }
+}
+@media ( max-width : 550px) {
+    .header{
+        height: 13vh;
+    }
+    .header .judul{
+        font-size: 25px;
+    }
+    .header ul li{
+        font-size: 13px;
+        margin-right: 0;
+    }
+
+}
+@media (max-width:469px){
+    .data .enter input[type=text]{
+        padding: 6px 2px;
+        font-size: 10px;
+    }
+    .header{
+        height: 17vh;
+    }
+    .data .tabel{
+        font-size: 12px;
+    }
+    .data .tabel td::before{
+        font-size: 12px;
+    }
+
+}
+
