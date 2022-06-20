@@ -7,7 +7,7 @@ library(wordcloud)
 get_token()
 
 
-rstat_tweets <- search_tweets(q="#KetahananPangan", n= 5000)
+rstat_tweets <- search_tweets(q="Ketahanan Pangan", n= 1000)
 
 head(rstat_tweets, n=5)
 textdata <- head(rstat_tweets$text)
