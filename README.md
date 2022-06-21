@@ -22,6 +22,10 @@ Astrinariswari Rahmadian P (221910835/3SD1)
 - Data Skor Pola Pangan Harapan 2021 Menurut Provinsi. Hal ini penting dalam ketahanan pangan Indonesia karena skor PPH digunakan untuk merencanakan kebutuhan konsumsi pangan pada tahun-tahun mendatang. Dataset ini diperoleh dari publikasi Badan Ketahanan Pangan Kementerian Pertanian. (Dataset ini dapat dilihat di folder dataset dengan nama file pph.xlsx) 
 - Data 1000 tweets terakhir yang mengandung kata “Ketahanan Pangan”. Mengekstraksi kata-kata yang sering muncul dalah tweets yang mengandung kata "Ketahanan Pangan"
 
+### Kerangkan Pikir Penelitian
+![DiagramAlur_Visdat](https://user-images.githubusercontent.com/107674311/174700241-83907136-34d3-4485-b078-34e81a2c96fc.png)
+
+
 ### Langkah-langkah pengerjaan
 ### Pre-processing
 Preprocessing and data transformation, peneliti akan melakukan pengumpulan data yang diperlukan dalam penelitian ini. Data yang dikumpulkan antara lain harga pangan, skor Pola Pangan Harapan (PPH), Indeks Ketahanan Pangan (IKP), dan data twitter. Setelah data terkumpul, peneliti melakukan pengolahan data Indeks Ketahanan Pangan, dan skor Pola Pangan Harapan dengan menggunakan Microsoft Excel.
@@ -91,6 +95,7 @@ Hasil dari penelitian ini yaitu dihasilkan dashboard visualisasi data interaktif
 - ketahanan pangan : visualisasi data interaktif data indeks ketahanan pangan
 - harga pangan : visualisasi data interaktif data harga rata-rata pangan komoditas per minggu (1 Januari 2020-30 Mei 2022)
 - skor PPH : visualisasi data interakif data skor Pola Pangan Harapan (PPH) Indonesia tahun 2021
+\
 Adapun website dapat dikunjungi pada link berikut ini : https://astrinariswari.github.io/index.html 
 
 ## Kesimpulan
