@@ -1,4 +1,4 @@
-# Implementasi Visual Data Interaktif pada Data Ketahanan Pangan Indonesia
+# Implementasi Visualisasi Data Interaktif pada Data Ketahanan Pangan Indonesia
 ### astrinariswari.github.io
 Project UAS Mata Kuliah Visualisasi Data dan Informasi 2021/2022 \
 Astrinariswari Rahmadian P (221910835/3SD1)
@@ -29,11 +29,69 @@ Preprocessing and data transformation, peneliti akan melakukan pengumpulan data 
 ### Pengolahan
 #### Text mining
 Berikut source code untuk Text Mining dengan menggunakan software R
+##### Load Package
+```{r}
+library(rtweet)
+library(ggplot2)
+library(dplyr)
+library(tm)
+library(wordcloud)
+```
+##### Membuat Token untuk mengakses twitter
+```{r}
+get_token()
+```
+##### Mencari Tweets 
+```{r}
+rstat_tweets <- search_tweets(q="Ketahanan Pangan", n= 1000)
 
+head(rstat_tweets, n=5)
+textdata <- head(rstat_tweets$text)
+textdata <- rstat_tweets$text
+tweet_doc <- Corpus(VectorSource(textdata))
+```
+##### Membersihkan corpus
+```{r}
+tweet_doc <- tm_map(tweet_doc, content_transformer(tolower))
+tweet_doc <- tm_map(tweet_doc, removeNumbers)
+tweet_doc <- tm_map(tweet_doc, removeWords)
+tweet_doc <- tm_map(tweet_doc, removePunctuation)
+tweet_doc <- tm_map(tweet_doc, stripWhitespace)
+```
+##### Convert corpus dengan berbagai manipulasi 
+```{r}
+dtm <- TermDocumentMatrix(tweet_doc)
+m <- as.matrix(dtm)
+v <- sort(rowSums(m), decreasing = TRUE)
+d <- data.frame(frequency=v)
+d <- data.frame(word=names(v), frequency=v)
+head(d,10)
+```
+##### Plot untuk data yang memiliki frekuensi kemunculan tinggi
+```{r}
+barplot(d[1:15,]$frequency, las=2, names.arg = d[1:15,]$word, col = "salmon", 
+        main = "Top 15 Most Frequent Words", ylab = "word frequencies" )
+```
+##### Membuat wordcloud
+```{r}
+set.seed(1234)
+wordcloud(words=d$word, freq = d$frequency, min.freq = 5, max.words = 1000, 
+          random.order = F, colors = brewer.pal(8, "Dark2"), rot.per = 0.3)
+```
+#### Visualisasi Data Interaktif
+Setelah data melewati pre-processing dan transformation serta pengolahan, data siap untuk divisualisasikan. Dalam melakukan visualisasi data di bantu dengan menggunakan software Tableau. Penyimpanan project visualisasi ini di tableau public sehingga pengguna dapat melihat langsung pada link berikut. 
+https://public.tableau.com/app/profile/astrinariswari
 
 #### Dashboard 
+Karena penelitian ini ingin membuat dashboard visualisasi data interaktif pada ketahanan pangan berbasis web, peneliti melanjutkan proses pembuatan dashboard dengan menggunakan html dan css. 
 
 ## Hasil
+Hasil dari penelitian ini yaitu dihasilkan dashboard visualisasi data interaktif pada data ketahanan pangan berbasis website. Dalam dashboard visualisasi data yang dibangun terdiri dari menu: 
+- about : informasi mengenai ketahanan pangan dan visualisasi data hasil text mining data twitter
+- ketahanan pangan : visualisasi data interaktif data indeks ketahanan pangan
+- harga pangan : visualisasi data interaktif data harga rata-rata pangan komoditas per minggu (1 Januari 2020-30 Mei 2022)
+- skor PPH : visualisasi data interakif data skor Pola Pangan Harapan (PPH) Indonesia tahun 2021
+Adapun website dapat dikunjungi pada link berikut ini : https://astrinariswari.github.io/index.html 
 
 ## Kesimpulan
-
+Dashboard visualisasi data interaktif pada ketahanan pangan berbasis website telah berhasil dibangun pangan yang terdiri dari data Indeks Ketahanan Pangan, skor Pola Pangan Harapan (PPH), harga rata-rata pangan komoditas per minggu, dan data twitter  melalui 5 jenis visualisasi data interaktif yaitu Bar Chart, Line Chart, Pie Chart, Choropleth Map, dan Word Cloud.
