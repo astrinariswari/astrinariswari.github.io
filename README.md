@@ -90,15 +90,17 @@ https://public.tableau.com/app/profile/astrinariswari
 Karena penelitian ini ingin membuat dashboard visualisasi data interaktif pada ketahanan pangan berbasis web, peneliti melanjutkan proses pembuatan dashboard dengan menggunakan html dan css. 
 
 ## Hasil
-Hasil dari penelitian ini yaitu dihasilkan dashboard visualisasi data interaktif pada data ketahanan pangan berbasis website. Dalam dashboard visualisasi data yang dibangun terdiri dari menu: 
+Hasil dari penelitian ini yaitu dihasilkan dashboard visualisasi data interaktif pada data ketahanan pangan berbasis website. Website dapat dikunjungi pada link berikut ini : https://astrinariswari.github.io/index.html Dalam dashboard visualisasi data yang dibangun terdiri dari menu: 
 - about : informasi mengenai ketahanan pangan dan visualisasi data hasil text mining data twitter
 - ketahanan pangan : visualisasi data interaktif data indeks ketahanan pangan
 - harga pangan : visualisasi data interaktif data harga rata-rata pangan komoditas per minggu (1 Januari 2020-30 Mei 2022)
 - skor PPH : visualisasi data interakif data skor Pola Pangan Harapan (PPH) Indonesia tahun 2021
-\
-Adapun website dapat dikunjungi pada link berikut ini : https://astrinariswari.github.io/index.html 
 
 ## Kesimpulan
 Dashboard visualisasi data interaktif pada ketahanan pangan berbasis website telah berhasil dibangun pangan yang terdiri dari data Indeks Ketahanan Pangan, skor Pola Pangan Harapan (PPH), harga rata-rata pangan komoditas per minggu, dan data twitter  melalui 5 jenis visualisasi data interaktif yaitu Bar Chart, Line Chart, Pie Chart, Choropleth Map, dan Word Cloud.\
 Kekurangan yang ada ialah belum dilakukannya pengujian terhadap dashboard yang telah dibangun. Selain itu, karena keterbatasan data membuat visualisasi data yang dilakukan kurang maksimal. Maka dari itu, peneliti memiliki beberapa saran untuk penelitian selanjutnya yaitu menambahkan pengujian dan evaluasi terhadap dashboard yang telah dibangun. 
 
+
+#### Kritik, Saran, dan Tanggapan 
+Apabila Anda terdapat kritik, saran, dan tanggapan mengenai tugas akhir ini silakan dapat mengisi link berikut ini.
+https://s.stis.ac.id/KrikSaran_ProjectVisdat_Astri
