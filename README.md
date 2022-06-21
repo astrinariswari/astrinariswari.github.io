@@ -99,6 +99,6 @@ Hasil dari penelitian ini yaitu dihasilkan dashboard visualisasi data interaktif
 Adapun website dapat dikunjungi pada link berikut ini : https://astrinariswari.github.io/index.html 
 
 ## Kesimpulan
-Dashboard visualisasi data interaktif pada ketahanan pangan berbasis website telah berhasil dibangun pangan yang terdiri dari data Indeks Ketahanan Pangan, skor Pola Pangan Harapan (PPH), harga rata-rata pangan komoditas per minggu, dan data twitter  melalui 5 jenis visualisasi data interaktif yaitu Bar Chart, Line Chart, Pie Chart, Choropleth Map, dan Word Cloud.
+Dashboard visualisasi data interaktif pada ketahanan pangan berbasis website telah berhasil dibangun pangan yang terdiri dari data Indeks Ketahanan Pangan, skor Pola Pangan Harapan (PPH), harga rata-rata pangan komoditas per minggu, dan data twitter  melalui 5 jenis visualisasi data interaktif yaitu Bar Chart, Line Chart, Pie Chart, Choropleth Map, dan Word Cloud.\
 Kekurangan yang ada ialah belum dilakukannya pengujian terhadap dashboard yang telah dibangun. Selain itu, karena keterbatasan data membuat visualisasi data yang dilakukan kurang maksimal. Maka dari itu, peneliti memiliki beberapa saran untuk penelitian selanjutnya yaitu menambahkan pengujian dan evaluasi terhadap dashboard yang telah dibangun. 
 
